@@ -45,7 +45,7 @@ const translations = {
         {
           title: "Software Engineer",
           company: "Jeeves Information Systems (Forterro)",
-          duration: "05/2022 - 01/2025",
+          duration: "06/2023 - 01/2025",
           points: [
             "Entwickelte Kafka-basierte Event-Ingestion-Pipelines mit Consumer-Retries und Dead-Letter-Queues, sodass fehlgeschlagene Events die Verarbeitung nicht blockieren, und verkürzte die Kunden-Einführungszeit um rund 40 %.",
             "Definierte gRPC- und Protocol-Buffers-Verträge zwischen Spring-Boot-Services und kombinierte Kafka-Topics mit AWS SQS/SNS für zuverlässige asynchrone Kommunikation.",
@@ -58,7 +58,7 @@ const translations = {
         {
           title: "Associate Software Engineer",
           company: "Jeeves Information Systems (Forterro)",
-          duration: "05/2022 - 01/2025",
+          duration: "05/2022 - 06/2023",
           points: [
             "Entwickelte REST-APIs mit Spring Boot und Hibernate/JPA auf Basis von MySQL und PostgreSQL in einer Microservices-Umgebung und ergänzte Eingabevalidierung, zentrale Fehlerbehandlung und standardisierte API-Antworten.",
             "Verbesserte die Backend-Performance durch SQL-Query-Tuning, Indizierung und Redis-Caching und reduzierte die API-Latenz bei stark genutzten Endpunkten um rund 30 %.",
@@ -209,7 +209,7 @@ const translations = {
         {
           title: "Software Engineer",
           company: "Jeeves Information Systems (Forterro)",
-          duration: "05/2022 - 01/2025",
+          duration: "06/2023 - 01/2025",
           points: [
             "Built Kafka-based event ingestion pipelines with consumer retries and dead-letter queues so failed events never block processing, reducing client onboarding time by roughly 40%.",
             "Defined gRPC and Protocol Buffers contracts between Spring Boot services, combining Kafka topics with AWS SQS/SNS for reliable asynchronous communication.",
@@ -222,7 +222,7 @@ const translations = {
         {
           title: "Associate Software Engineer",
           company: "Jeeves Information Systems (Forterro)",
-          duration: "05/2022 - 01/2025",
+          duration: "05/2022 - 06/2023",
           points: [
             "Developed Spring Boot and Hibernate/JPA REST APIs backed by MySQL and PostgreSQL in a microservices environment, adding input validation, centralised exception handling and standardised API responses.",
             "Improved backend performance through SQL query tuning, indexing and Redis caching, reducing API latency by around 30% on high-traffic endpoints.",

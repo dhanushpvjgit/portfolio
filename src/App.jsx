@@ -14,7 +14,7 @@ const site = {
   email: "dhanush.palani.vijay.kumari.job@gmail.com",
   github: "https://github.com/dhanushpvjgit",
   githubRepos: "https://github.com/dhanushpvjgit?tab=repositories",
-  resumeUrl: "https://drive.google.com/drive/u/1/folders/10LGuR8yXjuXzuYGTczCVsw6qRiNxm0ZP",
+  resumeUrl: "https://drive.google.com/file/d/1wW60JupS5hQ3KxTXyvV2XbxLPUd9m0UB/view?usp=sharing",
   copyrightYear: 2026
 };
 

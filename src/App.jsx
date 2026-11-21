@@ -47,24 +47,21 @@ const translations = {
           company: "Jeeves Information Systems (Forterro)",
           duration: "06/2023 - 01/2025",
           points: [
-            "Entwickelte Kafka-basierte Event-Ingestion-Pipelines mit Consumer-Retries und Dead-Letter-Queues, sodass fehlgeschlagene Events die Verarbeitung nicht blockieren, und verkürzte die Kunden-Einführungszeit um rund 40 %.",
-            "Definierte gRPC- und Protocol-Buffers-Verträge zwischen Spring-Boot-Services und kombinierte Kafka-Topics mit AWS SQS/SNS für zuverlässige asynchrone Kommunikation.",
-            "Konzipierte ein entkoppeltes Backend aus unabhängig deploybaren Spring-Boot-Microservices mit Eureka für Service Discovery und einem API Gateway für einheitliches Routing.",
-            "Entwickelte eine Elasticsearch-Indexierungspipeline, die mit PostgreSQL synchron gehalten wird, optimierte Analyzer, Mappings und Relevanz-Ranking und verwaltete Shards und Reindexing.",
-            "Senkte die Antwortzeiten von Reporting-Endpunkten von rund 2 Sekunden auf 300 ms durch Query-Tuning, Redis-Caching und HikariCP-Pooling und ergänzte Rate Limiting pro API-Key mit Redis und Bucket4j.",
-            "Etablierte Code-Review-Standards im Team, betreute Nachwuchsentwickler durch Reviews und Pair Programming und analysierte JVM-Services mit Datadog APM und JFR, um Verarbeitungsengpässe zu beseitigen."
-          ]
+            "Entwicklung von Kafka-basierten Event-Ingestion-Pipelines mit Retries und Dead-Letter-Queues, sodass fehlgeschlagene Events wiederhergestellt statt verloren wurden; dadurch Verkürzung der Onboarding-Zeit für Kunden um rund 40 %.",
+  "Reduzierung der Antwortzeiten der Reporting-API von etwa 2 Sekunden auf 300 ms durch SQL-Tuning, Redis-Caching und HikariCP-Pooling sowie Einführung eines Rate-Limitings pro API-Key mit Redis und Bucket4j.",
+  "Konzeption idempotenter APIs, sodass wiederholte oder doppelte Anfragen nie zu doppelten Transaktionen führten; Einsatz von RabbitMQ-Events zur Datenkonsistenz über mehrere Datenbanken hinweg, mit Hintergrundverarbeitung, damit Nutzer während der Synchronisation nie blockiert wurden.",
+  "Aufteilung der Plattform in über 10 unabhängig deploybare Spring-Boot-Microservices (Benachrichtigungen, Monitoring, Mitarbeitervorteile) hinter Eureka und einem API-Gateway, mit gRPC/Protobuf-Verträgen zwischen den Services und einer Verfügbarkeit von 99,9 %."
+         ]
         },
         {
           title: "Associate Software Engineer",
           company: "Jeeves Information Systems (Forterro)",
           duration: "05/2022 - 06/2023",
           points: [
-            "Entwickelte REST-APIs mit Spring Boot und Hibernate/JPA auf Basis von MySQL und PostgreSQL in einer Microservices-Umgebung und ergänzte Eingabevalidierung, zentrale Fehlerbehandlung und standardisierte API-Antworten.",
-            "Verbesserte die Backend-Performance durch SQL-Query-Tuning, Indizierung und Redis-Caching und reduzierte die API-Latenz bei stark genutzten Endpunkten um rund 30 %.",
-            "Sicherte Services mit Spring Security und JWT ab und setzte rollenbasierte Zugriffskontrolle für Administratoren, Benutzer und Partner um.",
-            "Schrieb Unit- und Integrationstests mit JUnit 5 und Mockito, einschließlich Embedded-Kafka-Tests, und behob SonarQube- und Checkmarx-Findings, um Qualitäts- und Sicherheitsprüfungen stabil zu bestehen.",
-            "Analysierte Produktionsfehler, identifizierte Ursachen und lieferte Korrekturen mit Präventionsmaßnahmen; unterstützte Docker- und Kubernetes-Deployments über Jenkins-CI/CD-Pipelines in agilen Scrum-Teams."
+            "Entwicklung von Spring-Boot-REST-APIs mit Hibernate/JPA sowie MySQL und PostgreSQL, inklusive Eingabevalidierung, zentralisierter Fehlerbehandlung und standardisierter API-Antworten.",
+  "Verbesserung der Performance stark frequentierter APIs um etwa 30 % durch SQL-Query-Optimierung, Datenbankindizes und Entfernung redundanter Aufrufe.",
+  "Absicherung der Services mit Spring Security und JWT sowie rollenbasierte Zugriffskontrolle für Admin-, Benutzer- und Partnerrollen.",
+  "Erstellung von JUnit-5- und Mockito-Tests, Behebung von SonarQube- und Checkmarx-Findings sowie Unterstützung bei der Fehleranalyse im Produktivbetrieb und bei Docker/Kubernetes-Deployments über Jenkins CI/CD."
           ]
         }
       ]
@@ -211,12 +208,10 @@ const translations = {
           company: "Jeeves Information Systems (Forterro)",
           duration: "06/2023 - 01/2025",
           points: [
-            "Built Kafka-based event ingestion pipelines with consumer retries and dead-letter queues so failed events never block processing, reducing client onboarding time by roughly 40%.",
-            "Defined gRPC and Protocol Buffers contracts between Spring Boot services, combining Kafka topics with AWS SQS/SNS for reliable asynchronous communication.",
-            "Designed a decoupled backend of independently deployable Spring Boot microservices, using Eureka for service discovery and an API Gateway for unified routing.",
-            "Built an Elasticsearch indexing pipeline synchronised with PostgreSQL, tuning analyzers, mappings and relevance ranking and handling shards and reindexing.",
-            "Cut reporting endpoint response times from about 2 seconds to 300 ms through query tuning, Redis caching and HikariCP pooling, and added per-API-key rate limiting with Redis and Bucket4j.",
-            "Established team code-review standards, mentored junior developers through reviews and pair programming, and profiled JVM services with Datadog APM and JFR to remove processing inefficiencies."
+             "Built Kafka-based event ingestion pipelines with retries and dead-letter queues so failed events were recovered instead of lost, reducing client onboarding time by roughly 40%.",
+              "Cut reporting API response times from about 2 seconds to 300 ms through SQL tuning, Redis caching and HikariCP pooling, and added per-API-key rate limiting with Redis and Bucket4j.",
+              "Designed idempotent APIs so retried or duplicate requests never created duplicate transactions, and used RabbitMQ events to keep data consistent across multiple databases, with background processing so users were never blocked during sync.",
+              "Split the platform into 10+ independently deployable Spring Boot microservices (notifications, monitoring, employee benefits) behind Eureka and an API Gateway, with gRPC/Protobuf contracts between services, running at 99.9% uptime."
           ]
         },
         {
@@ -224,12 +219,11 @@ const translations = {
           company: "Jeeves Information Systems (Forterro)",
           duration: "05/2022 - 06/2023",
           points: [
-            "Developed Spring Boot and Hibernate/JPA REST APIs backed by MySQL and PostgreSQL in a microservices environment, adding input validation, centralised exception handling and standardised API responses.",
-            "Improved backend performance through SQL query tuning, indexing and Redis caching, reducing API latency by around 30% on high-traffic endpoints.",
-            "Secured services with Spring Security and JWT, applying role-based access control for administrators, users and partners.",
-            "Wrote JUnit 5 and Mockito unit and integration tests, including Embedded Kafka tests, and resolved SonarQube and Checkmarx findings to keep quality and security checks passing.",
-            "Investigated production defects, identified root causes and shipped fixes with preventive measures; supported Docker and Kubernetes deployments through Jenkins CI/CD pipelines in Agile/Scrum teams."
-          ]
+           "Developed Spring Boot REST APIs using Hibernate/JPA with MySQL and PostgreSQL, implementing input validation, centralised exception handling and standardised API responses.",
+            "Improved high-traffic API performance by approximately 30% through SQL query optimisation, database indexing and removing redundant calls.",
+            "Secured services using Spring Security and JWT, enforcing role-based access for admin, user and partner roles.",
+            "Wrote JUnit 5 and Mockito tests, resolved SonarQube and Checkmarx findings, and supported production troubleshooting and Docker/Kubernetes deployments through Jenkins CI/CD."
+         ]
         }
       ]
     },

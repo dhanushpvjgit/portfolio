@@ -14,7 +14,7 @@ const site = {
   email: "dhanush.palani.vijay.kumari.job@gmail.com",
   github: "https://github.com/dhanushpvjgit",
   githubRepos: "https://github.com/dhanushpvjgit?tab=repositories",
-  resumeUrl: "https://drive.google.com/file/d/1wW60JupS5hQ3KxTXyvV2XbxLPUd9m0UB/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1Cxp9auTuJkLiIy17ItqxANaiANXfkQM2/view?usp=sharing",
   copyrightYear: 2026
 };
 
@@ -47,10 +47,11 @@ const translations = {
           company: "Jeeves Information Systems (Forterro)",
           duration: "06/2023 - 01/2025",
           points: [
-            "Entwicklung von Kafka-basierten Event-Ingestion-Pipelines mit Retries und Dead-Letter-Queues, sodass fehlgeschlagene Events wiederhergestellt statt verloren wurden; dadurch Verkürzung der Onboarding-Zeit für Kunden um rund 40 %.",
-  "Reduzierung der Antwortzeiten der Reporting-API von etwa 2 Sekunden auf 300 ms durch SQL-Tuning, Redis-Caching und HikariCP-Pooling sowie Einführung eines Rate-Limitings pro API-Key mit Redis und Bucket4j.",
-  "Konzeption idempotenter APIs, sodass wiederholte oder doppelte Anfragen nie zu doppelten Transaktionen führten; Einsatz von RabbitMQ-Events zur Datenkonsistenz über mehrere Datenbanken hinweg, mit Hintergrundverarbeitung, damit Nutzer während der Synchronisation nie blockiert wurden.",
-  "Aufteilung der Plattform in über 10 unabhängig deploybare Spring-Boot-Microservices (Benachrichtigungen, Monitoring, Mitarbeitervorteile) hinter Eureka und einem API-Gateway, mit gRPC/Protobuf-Verträgen zwischen den Services und einer Verfügbarkeit von 99,9 %."
+            'ERP-Plattform in über 10 unabhängig deploybare Spring-Boot-Microservices (Logistik, Schließfachverwaltung, Zahlungen, Benachrichtigungen, Monitoring) hinter Eureka und API Gateway aufgeteilt, mit gRPC/Protobuf-Verträgen zwischen den Services und einer Verfügbarkeit von 99,9 %.',
+    'Mehrere Zahlungsanbieter über ein Factory Pattern integriert, sodass neue Anbieter ohne Änderung der Kernlogik ergänzt werden können, inklusive Kartenzahlungen, Rückerstattungen und Teilrückerstattungen.',
+    'Idempotente APIs entworfen, sodass wiederholte oder doppelte Anfragen keine doppelten Transaktionen erzeugten, und mit RabbitMQ-Events sowie Hintergrundverarbeitung mehrere Datenbanken konsistent gehalten, ohne Nutzer zu blockieren.',
+    'Kafka-basierte Event-Ingestion-Pipelines mit Retries und Dead-Letter-Queues aufgebaut, sodass fehlgeschlagene Events wiederhergestellt statt verloren wurden, und die Onboarding-Zeit neuer Kunden um rund 40 % gesenkt.',
+    'Antwortzeit der Reporting-API von ca. 2 Sekunden auf 300 ms reduziert durch SQL-Tuning, Redis-Caching und HikariCP-Pooling.'
          ]
         },
         {
@@ -58,10 +59,9 @@ const translations = {
           company: "Jeeves Information Systems (Forterro)",
           duration: "05/2022 - 06/2023",
           points: [
-            "Entwicklung von Spring-Boot-REST-APIs mit Hibernate/JPA sowie MySQL und PostgreSQL, inklusive Eingabevalidierung, zentralisierter Fehlerbehandlung und standardisierter API-Antworten.",
-  "Verbesserung der Performance stark frequentierter APIs um etwa 30 % durch SQL-Query-Optimierung, Datenbankindizes und Entfernung redundanter Aufrufe.",
-  "Absicherung der Services mit Spring Security und JWT sowie rollenbasierte Zugriffskontrolle für Admin-, Benutzer- und Partnerrollen.",
-  "Erstellung von JUnit-5- und Mockito-Tests, Behebung von SonarQube- und Checkmarx-Findings sowie Unterstützung bei der Fehleranalyse im Produktivbetrieb und bei Docker/Kubernetes-Deployments über Jenkins CI/CD."
+            'Java- und SQL-Batchjobs entwickelt, die wiederkehrende ERP-Prozesse automatisierten, den manuellen Aufwand senkten und dem Kunden direkten Mehrwert lieferten.',
+    'Spring-Boot-REST-APIs mit Hibernate/JPA auf MySQL und PostgreSQL entwickelt und mit Spring Security und JWT rollenbasiert für Admin-, Benutzer- und Partnerrollen abgesichert.',
+    'Performance stark genutzter APIs um ca. 30 % verbessert durch SQL-Query-Tuning, Datenbankindizes und das Entfernen redundanter Aufrufe.'
           ]
         }
       ]
@@ -208,10 +208,11 @@ const translations = {
           company: "Jeeves Information Systems (Forterro)",
           duration: "06/2023 - 01/2025",
           points: [
-             "Built Kafka-based event ingestion pipelines with retries and dead-letter queues so failed events were recovered instead of lost, reducing client onboarding time by roughly 40%.",
-              "Cut reporting API response times from about 2 seconds to 300 ms through SQL tuning, Redis caching and HikariCP pooling, and added per-API-key rate limiting with Redis and Bucket4j.",
-              "Designed idempotent APIs so retried or duplicate requests never created duplicate transactions, and used RabbitMQ events to keep data consistent across multiple databases, with background processing so users were never blocked during sync.",
-              "Split the platform into 10+ independently deployable Spring Boot microservices (notifications, monitoring, employee benefits) behind Eureka and an API Gateway, with gRPC/Protobuf contracts between services, running at 99.9% uptime."
+             'Split the ERP platform into 10+ independently deployable Spring Boot microservices (logistics, locker management, payments, notifications, monitoring) behind Eureka and an API Gateway, with gRPC/Protobuf contracts between services, sustaining 99.9% uptime.',
+    'Integrated multiple payment gateways behind a Factory Pattern so new providers plug in without touching core logic, covering card payments, refunds and partial refunds.',
+    'Designed idempotent APIs so retried or duplicate requests never created duplicate transactions, and used RabbitMQ events with background processing to keep multiple databases consistent without blocking users.',
+    'Built Kafka event ingestion pipelines with retries and dead-letter queues, so failed events were recovered instead of lost, reducing client onboarding time by roughly 40%.',
+    'Cut reporting API response time from about 2 seconds to 300 ms through SQL tuning, Redis caching and HikariCP pooling.'
           ]
         },
         {
@@ -219,10 +220,9 @@ const translations = {
           company: "Jeeves Information Systems (Forterro)",
           duration: "05/2022 - 06/2023",
           points: [
-           "Developed Spring Boot REST APIs using Hibernate/JPA with MySQL and PostgreSQL, implementing input validation, centralised exception handling and standardised API responses.",
-            "Improved high-traffic API performance by approximately 30% through SQL query optimisation, database indexing and removing redundant calls.",
-            "Secured services using Spring Security and JWT, enforcing role-based access for admin, user and partner roles.",
-            "Wrote JUnit 5 and Mockito tests, resolved SonarQube and Checkmarx findings, and supported production troubleshooting and Docker/Kubernetes deployments through Jenkins CI/CD."
+          'Built Java and SQL batch jobs that automated recurring ERP processes, cutting manual effort and adding direct business value for the customer.',
+    'Developed Spring Boot REST APIs with Hibernate/JPA on MySQL and PostgreSQL, secured with Spring Security and JWT role-based access for admin, user and partner roles.',
+    'Improved high-traffic API performance by about 30% through SQL query tuning, database indexing and removal of redundant calls.'
          ]
         }
       ]
